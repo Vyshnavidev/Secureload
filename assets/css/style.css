@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Global gradient background */
+.bg-gradient-orange {
+    background: linear-gradient(90deg, rgba(255, 159, 0, 1) 0%, rgba(255, 94, 0, 1) 100%);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Gradient text for brand and headings */
+.text-gradient-orange {
+    background: linear-gradient(90deg, rgba(255, 159, 0, 1) 0%, rgba(255, 94, 0, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Additional button styling */
+.btn.bg-gradient-orange:hover {
+    background: linear-gradient(90deg, rgba(255, 94, 0, 1) 0%, rgba(255, 159, 0, 1) 100%);
+    color: white;
+}
+
+/* Global class for using gradient background */
+.bg-global-gradient {
+    background: linear-gradient(135deg, rgba(255, 94, 0, 1), rgba(255, 159, 0, 1));
+}
+
+
+
+
+/* Navbar styling */
+
+
+.nav-link {
+    font-size: 1rem;
+    color: #000;
+}
+
+.nav-link:hover {
+    color: rgba(255, 94, 0, 1); /* Orange hover effect */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.navbar .btn {
+    background-color: rgba(255, 94, 0, 1);
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .btn:hover {
+    background-color: rgba(255, 159, 0, 1); /* Hover effect on the button */
+}
+
+/* Hero section */
+.hero-container {
+    min-height: 100vh; /* Ensures it stretches to full viewport height without forcing content into fixed height */
+    margin-top: 90px;
+}
+
+
+.hero-container h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    
+}
+
+.hero-container p.lead {
+    font-size: 1.25rem;
+    
+}
+
+.hero-container .btn {
+    background-color: rgba(255, 94, 0, 1);
+    color: white;
+    border-radius: 25px;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.hero-container .btn:hover {
+    background-color: rgba(255, 159, 0, 1); /* Hover effect */
+}
+
+/* Image styling in hero section */
+.hero-container img {
+    width: 100%;
+    height: 550px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text {
+    overflow: visible; /* Allow full content to show */
+    text-overflow: unset; /* Remove any hidden overflow on text */
+    display: block; /* Use block display to allow content expansion */
+}
+
+.btn .bi {
+    margin-right: 8px; /* Add space between the icon and text */
+    font-size: 1.2rem; /* Adjust icon size */
+    vertical-align: middle;
+}
+
+
+/* Version section styling */
+
+.version-card {
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.version-card:hover {
+    transform: translateY(-5px);
+}
+
+.version-card img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 1rem;
+}
+
+.version-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.version-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+/* vessel section */
+
+.vessel-section {
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+
+/* Technologies Section */
+.technologies-container {
+    overflow: hidden; /* Prevents overflow */
+}
+
+.technology-tab-container {
+    overflow: hidden; /* Prevents overflow in the tab container */
+}
+
+/* Adjust the tab content to prevent overflow */
+.tab-content {
+    overflow: hidden; /* Allows vertical scrolling if necessary */
+
+}
+
+.technology-main {
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.technology-main:hover {
+    transform: translateY(-5px);
+}
+
+.technology-tab-container .nav-link:active, .nav-link:focus {
+    background-color: rgba(255, 94, 0, 1);
+}
+
+/* Custom style for active tab */
+.nav-pills .nav-link.active {
+    background: linear-gradient(90deg, rgba(255, 94, 0, 1), rgba(255, 159, 0, 1)); /* Adjust gradient colors as needed */
+    color: white; /* Ensure text is readable against the gradient */
+    border: none; /* Remove border if necessary */
+}
+
+.nav-pills .nav-link {
+    border: none; /* Remove border for normal state if needed */
+    color: rgba(0, 0, 0, 0.6); /* Optional: Default text color for inactive tabs */
+    transition: background 0.3s ease; /* Smooth transition */
+    width: 100%; /* Set the width of each button to 100% */
+    text-align: left;
+}
+
+/* Optional: Add margin to the buttons for spacing */
+.nav-pills .nav-item {
+    margin-bottom: 1rem; /* Adjust spacing between pills */
+}
+
+.tech-tab img {
+    width: 600px;
+    height: auto;
+}
+
+.tech-tab p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+/* benefits section */
+
+.benefit-card {
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 330px;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-card img {
+    width: 60px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+
+.benefit-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+  
+
+  /* join us */
+
+  .join-container {
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+  }
+
+  .join-container img {
+    width: 250px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  /* events section  */
+
+.events-card {
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.events-card:hover {
+    transform: translateY(-5px);
+}
+
+.events-card img {
+    width: 250px;
+    height: auto;
+   
+}
+
+.events-card h5 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.events-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* get in touch */
+
+.get-in-touch-content {
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+    object-fit: cover;
+}
+
+.get-in-touch-form {
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+    object-fit: cover;
+    width: 380px;
+}
+
+/* footer */
+
+.footer-brand {
+    font-size: 1.5rem;
+}
+
+.footer-brand span {
+    font-weight: bold;
+}
+
+.footer-container a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+
+
+    
+    .hero-container {
+        margin-top: 100px;
+        height: auto;
+    }
+    
+    .hero-container img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero-container h1 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .btn {  
+        font-size: 0.8rem;
+    }
+
+    .btn .bi {
+        font-size: 1rem;
+    }
+
+    .benefit-card {
+        height: auto;
+    }
+
+    .get-in-touch-form {
+        width: 100%;
+    }
+
+    
+}
